@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+           .container{
+               height: 100%;
+               width: 100%;
+               position: absolute;
+               background-color: rgb(90, 165, 250);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+           }
+
+           .box{
+               border: 2px solid whitesmoke;
+               border-radius: 20px;
+               height: 250px;
+               width: 500px;
+               background-color: aliceblue;
+               position: absolute;
+               margin: auto;
+               box-shadow: 12px 12px 2px 1px rgba(211, 211, 236, 0.2);
+            }
+            .box h5{
+                text-align: center;
+                margin: 20px;
+                font-size: 20px;
+            }
+            
+           .btn{
+               position: absolute;
+               top: 177px;
+               left: 40%;
+               background-color: yellow;
+               border-radius: 10px;
+               padding: 4px 11px;
+                font-size: 17px;
+               font-size: 20px;
+               box-shadow: 12px 12px 2px 1px rgba(84, 84, 214, 0.2);
+               cursor: pointer;
+           }
+           .joke{
+               text-align: center;
+               font-size: 20px;
+               height: 60px;
+               margin: 40px;
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h5>Get your Daily Dose of Jokes</h5>
+            <div id="joke" class="joke">Hold your laugh</div>
+            <button id ="jbtn" class="btn">Next Joke</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
